@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container{
+    height: 100vh;
+    background-color: #D3D3D3;
+}
+
+.container section{
+    width: 50vw;
+    margin: 0 auto;
+    padding: 3% 0 0 0;
+}
+
+.container section h1{
+    text-align: center;
+    font-size: 3em;
+    color: #333;
+}
+
+.container section div{
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3%;
+}
+
+.container section div input{
+    font-size: 1em;
+    padding: 2%;
+    color: #333;
+    min-width: 80%;
+    margin-right: 10px;
+    height: 35px;
+    border-radius: 5px;
+    border: 0;
+}
+
+.container section div button{
+    border: 0;
+    background-color: green;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: .5% 2%;
+    font-size: 1.3em;
+    color: white;
+    height: 35px;
+    animation: btn-animation 1s ease infinite;
+}
+
+.container section ul{
+    padding: 5% 0 0 0;
+}
+
+.container section ul li{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 3%;
+}
+
+.container section ul li span{
+    color: #333;
+    font-size: 1.3em;
+    margin-right: 10px;
+}
+
+.container section ul li button{
+    border: 0;
+    border-radius: 3px;
+    color: #333;
+    background-color: red;
+    font-size: 1.3em;
+    padding: 5px;
+    cursor: pointer;
+    animation: btn-animation 1s ease infinite;
+}
+
+
+@keyframes btn-animation{
+    0%{
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    50%{
+        opacity: .6;
+        transform: scale(1.1);
+    }
+
+    100%{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
